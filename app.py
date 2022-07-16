@@ -22,6 +22,11 @@ class Vendor(db.Model):
     email = db.Column(db.String(50), nullable=False)
     cartitems = db.relationship(
         'Cartitem', backref='vendor', cascade="all, delete")
+    
+    
+    
+    
+    
 
 class Cartitem(db.Model):
     id = db.Column(db.Integer, primary_key=True)
