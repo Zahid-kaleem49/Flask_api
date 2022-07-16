@@ -11,6 +11,10 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
 db = SQLAlchemy(app)
 
 
+
+
+
+
 class Vendor(db.Model):
   
     id = db.Column(db.Integer, primary_key=True)
